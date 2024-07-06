@@ -1,8 +1,6 @@
 # Casquette
 ![logo](https://github.com/zearp/casquette/assets/63272687/db2c3091-b286-4f00-b087-302f235f3ae7)
 
-## Work in progress, under contruction, please hold
-
 My spin on Fedora Linux. Nothing fancy. Bare bones with only the things I need and want. The aim of this repo is to have my stuff easily available to myself and anyone interested. It is essentially a kickstart file that can be modified to suit your needs and build an iso with. Compared to a normal Fedora Linux dark mode is enabled by default, third party repo's been added and a different (minimal) selection of packages is used. Kickstarts are a great way to customise Fedora Linux. The iso can be installed without an active internet connection.
 <details>
   <summary>Packages:</summary>

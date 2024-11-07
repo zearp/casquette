@@ -116,7 +116,7 @@ rm /etc/resolv.conf
 %end
 
 %packages
-@^minimal-environment
+#@^minimal-environment -- seems to be removed from Fedora 41, can't find any info on it
 @anaconda-tools
 @fonts
 @hardware-support

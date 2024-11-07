@@ -62,9 +62,9 @@ My spin on Fedora Linux. Nothing fancy. Bare bones with only the things I need a
    ```
 4. Log back in and create ```/etc/mock/casquette.cfg``` and paste in the following:
    ```sh
-   include('fedora-40-x86_64-rpmfusion_nonfree.cfg')
-   config_opts['root'] = "casquette-40-{{ target_arch }}"
-   config_opts['description'] = 'Casquette 40'
+   include('fedora-41-x86_64-rpmfusion_nonfree.cfg')
+   config_opts['root'] = "casquette-41-{{ target_arch }}"
+   config_opts['description'] = 'Casquette 41'
    ```
 5. Initialise and enter the mock environment:
    ```sh
@@ -82,12 +82,12 @@ My spin on Fedora Linux. Nothing fancy. Bare bones with only the things I need a
 7. Generate the iso with the following command:
    ```sh
    livemedia-creator --ks flat.ks --no-virt --resultdir /var/lmc --project="Casquette" --make-iso \
-   --volid Casquette-40 --iso-only --iso-name Casquette-40-x86_64.iso --releasever=40 --macboot && exit
+   --volid Casquette-41 --iso-only --iso-name Casquette-41-x86_64.iso --releasever=41 --macboot && exit
    ```
 8. When it's done we'll move the iso file to the current directory and clean up:
    ```sh
-   sudo mv /var/lib/mock/casquette-40-x86_64/root/var/lmc/Casquette-40-x86_64.iso .
-   sudo chown $USER:$USER Casquette-40-x86_64.iso
+   sudo mv /var/lib/mock/casquette-41-x86_64/root/var/lmc/Casquette-41-x86_64.iso .
+   sudo chown $USER:$USER Casquette-41-x86_64.iso
    mock -r casquette --scrub=all
    ```
 9. Re-enable SELinux:
